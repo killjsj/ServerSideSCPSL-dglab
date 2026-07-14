@@ -38,8 +38,8 @@ namespace ServerSideSCPSL_dglab
                         Ins += v.Item1;
                         bChannelIns += (int)Math.Ceiling(v.Item1 * playerPrefer.BChannelMul);
                     }
-                    Ins = Mathf.Clamp(Ins, 0, s?.GetMaxIntensity()?.MaxA ?? 100);
-                    bChannelIns = Mathf.Clamp(bChannelIns, 0, s?.GetMaxIntensity()?.MaxB ?? 100);
+                    Ins = Mathf.Clamp(Ins, 0, s?.GetMaxIntensity()?.MaxA ?? 200);
+                    bChannelIns = Mathf.Clamp(bChannelIns, 0, s?.GetMaxIntensity()?.MaxB ?? 200);
                     if (s != null)
                     {
                         foreach (var item in s.GetDevices())
